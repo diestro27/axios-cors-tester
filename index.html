@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Axios & CORS Tester</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="SolArk_Icon.ico">
+</head>
+
+<body>
+  <div id="container">
+    <h1>Axios & CORS API Tester</h1>
+    <form>
+        <h2>Request</h2>
+        <label>
+            URL: 
+            <input type="text" id="url-input"></input>
+        </label>
+        <br>
+        <label>
+            Data in JSON Format
+            <br>
+            <textarea id="data-area"></textarea>
+        </label>
+        <br>
+        <fieldset id="method-fieldset">
+            <legend>Method</legend>
+            <label><input type="radio" name="method" value="get"> GET</input></label>
+            <label><input type="radio" name="method" value="post"> POST</input></label>
+            <label><input type="radio" name="method" value="delete"> DELETE</input></label>
+            <label><input type="radio" name="method" value="put"> PUT</input></label>
+        </fieldset>
+        <br>
+        <button id="submit" type="button">Submit</button>
+    </form>
+    <h2>Response</h2>
+    <p id="response"></p>
+  </div>
+  
+
+  <noscript>This page requires JavaScript. Please enable it in your browser.</noscript>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

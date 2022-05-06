@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    margin-top: 16px;
+    padding: 8px;
+}
+
+form, #response {
+    border: 2px solid navy;
+    padding: 20px;
+    width: 64%;
+}
+
+form h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+input[type=text] {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 8px;
+}
+
+label, legend {
+    font-size: 20px;
+}
+
+textarea {
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 8px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+#data-area {
+    font-size: 16px;
+    width: 100%;
+    min-height: 220px;
+}
+
+#method-fieldset {
+    display: flex;
+    gap: 16px;
+}
+
+#response {
+    border: 2px solid purple;
+    min-height: 256px;
+}
+
+#url-input {
+    width: 100%;
+}
