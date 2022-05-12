@@ -28,7 +28,7 @@ submit.addEventListener("click", async function() {
         }
         output = JSON.stringify(data);
     } catch (error) {
-        output = JSON.stringify(error);
+        output = error
         console.log(error);
     }
     response.innerText = output;

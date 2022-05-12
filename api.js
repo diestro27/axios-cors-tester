@@ -1,4 +1,5 @@
 function get(url) {
+    console.log("get")
     return axios
         .get(url)
         .then(response => response)
@@ -17,10 +18,12 @@ function del(url) {
 }
 
 function post(url, body) {
-    return axios    
+    return axios   
         .post(url, body)
         .then(response => response)
         .catch(error => {
+            console.log(error);
+            console.log("error block")
             throw error;
         });
 }
