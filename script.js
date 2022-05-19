@@ -26,10 +26,10 @@ submit.addEventListener("click", async function() {
             default: 
                 return;
         }
-        output = JSON.stringify(data);
+        output = JSON.stringify(data, null, 2);
     } catch (error) {
         output = error
         console.log(error);
     }
-    response.innerText = output;
+    response.innerHTML = `<pre>${output}</pre>`;
 });
